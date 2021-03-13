@@ -6,7 +6,7 @@ const mongoose   = require( 'mongoose' );
 const app = express();
 const User     = require( './app/models/user' );
 
-mongoose.connect('mongodb+srv://shriyash:%23Shree2626@cluster0.bsha0.mongodb.net/test_db?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://shriyash:<password>@cluster0.bsha0.mongodb.net/test_db?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
